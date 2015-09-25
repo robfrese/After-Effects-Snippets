@@ -1,0 +1,30 @@
+// NULL // STEAL CHILDREN
+// TO MOVE A NULL and not it's children
+// dup a null
+// repo / scale it
+// select the original null 
+// RUN THIS
+// it will parent the original null to this null, then delete the original null and rename this null to the name of the original null
+
+// 050415 _ 0425PM
+
+stealNullChildren()
+
+function stealNullChildren()
+{
+	var comp = app.project.activeItem;
+	if (comp == null) return
+	if (!(comp instanceof CompItem)) return
+	if (comp.selectedLayers.length != 2) return 
+	
+	var newn = comp.selectedLayers[0]
+	var oldn = comp.selectedLayers[1]
+	
+	app.beginUndoGroup('Steal Null Children')
+		
+	oldn.parent = newn
+	newn.name = oldn.name
+	oldn.remove()
+	
+	app.endUndoGroup()
+}
