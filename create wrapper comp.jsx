@@ -5,7 +5,7 @@
 createWrapper(false)
 
 
-function createWrapper(askName)
+function createWrapper(ScriptUI.environment.keyboardState.shiftKey)
 {
 	var comp = app.project.activeItem
 	
