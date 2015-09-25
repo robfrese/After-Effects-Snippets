@@ -1,0 +1,4 @@
+function ohno(){
+alert(‘oh no!’)
+}
+ohno();
