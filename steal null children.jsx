@@ -1,7 +1,5 @@
 // that thing where you need to reposition a NULL without moving the layers parented to it
-
 // duplicate the null, position the dup as necessary, and RUN THIS SCRIPT
-
 // it will parent the original null to this null, then delete the original null and rename this null to the name of the original null
 // it assumes that your DUPLICATE is the layer ABOVE the original null, so it uses the next layer as the original null
 
