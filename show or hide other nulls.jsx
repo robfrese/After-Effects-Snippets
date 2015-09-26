@@ -16,6 +16,7 @@ if (comp.selectedLayers.length == 0)
 			writeLn('Processing layer '+i+' of '+comp.layers.length)
 			
 			var layer = comp.layer(i)
+
 			if (layer.nullLayer == true && layer.shy == true)
 				{layer.enabled = false}
 			else
