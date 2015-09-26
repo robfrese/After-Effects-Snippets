@@ -2,7 +2,7 @@
 // places it in the same folder as your current comp
 // hold SHIFT to rename the dup
 
-dupcomp(true)
+dupcomp(ScriptUI.environment.keyboardState.shiftKey)
 
 function dupcomp (rename)
 {
